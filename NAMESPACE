@@ -1,0 +1,18 @@
+
+
+export(Smean)
+S3method(print, Smean)
+export(Sprop)
+S3method(print, Sprop)
+export(sample.size.mean)
+S3method(print, sample.size.mean)
+export(sample.size.prop)
+S3method(print, sample.size.prop)
+export(mbes)
+S3method(print, mbes)
+export(pps.sampling)
+S3method(print, pps.sampling)
+export(htestimate)
+S3method(print, htestimate)
+
+

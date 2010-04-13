@@ -1,0 +1,12 @@
+election                                                              German Parliament Election Data
+htestimate                                                            Horvitz-Thompson Estimator
+influenza                                                             Population and Cases of Influenza for Administrative Districts of Germany
+mbes                                                                  Model Based Estimation
+money                                                                 Money Data Frame
+pop                                                                   Small Sampling Example
+pps.sampling                                                          Sampling with Probabilities Proportional to Size
+sample.size.mean                                                      Sample Size Estimation for Mean Estimation
+sample.size.prop                                                      Sample Size Estimation for Proportions
+samplingbook-package                                                  Survey Sampling Procedures
+Smean                                                                 Sampling Mean Estimation
+Sprop                                                                 Sampling Proportion Estimation
