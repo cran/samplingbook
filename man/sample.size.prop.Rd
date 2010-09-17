@@ -1,26 +1,25 @@
 \name{sample.size.prop}
 \alias{sample.size.prop}
-\title{Sample Size Estimation for Proportions}
+\title{Sample Size Calculation for Proportion Estimation}
 \description{
-The function \code{sample.size.prop} returns the sample size needed for proportion estimation optional with consideration of finite population correction.
+The function \code{sample.size.prop} returns the sample size needed for proportion estimation either with or without consideration of finite population correction.
 }
 \usage{
 sample.size.prop(e, P = 0.5, N = Inf, level = 0.95)
 }
 \arguments{
-  \item{e}{precision, half width of confidence interval}
-  \item{P}{expected proportion of events. Default is \code{P=0.5}.}
-  \item{N}{integer for population size. Default is \code{N=Inf}, which means that calculations are carried out without finite population correction}
-  \item{level}{coverage probability for confidence intervals. Default is \code{level=0.95}}
+  \item{e}{positive number specifying the precision which is half width of confidence interval}
+  \item{P}{expected proportion of events with domain between values 0 and 1. Default is \code{P=0.5}.}
+  \item{N}{positive integer for population size. Default is \code{N=Inf}, which means that calculations are carried out without finite population correction.}
+  \item{level}{coverage probability for confidence intervals. Default is \code{level=0.95}.}
 }
 \details{
-For meaningful calculation precision should be chosen smaller than 0.5, because the domain of \code{P} is between values 0 and 1. Furthermore precision \code{e} should be smaller than proportion \code{P} respectively \code{(1-P)}.
+For meaningful calculation, precision \code{e} should be chosen smaller than 0.5, because the domain of \code{P} is between values 0 and 1. Furthermore, precision \code{e} should be smaller than proportion \code{P}, respectively \code{(1-P)}.
 }
 \value{
 The function \code{sample.size.prop} returns a value, which is a list consisting of the components
-  \item{call}{is a list of call components \code{e} precision, \code{P} expected proportion, \code{N} size of population and \code{level} coverage probability for confidence intervals}
+  \item{call}{is a list of call components \code{e} precision, \code{P} expected proportion, \code{N} population size, and \code{level} coverage probability for confidence intervals}
   \item{n}{estimate of sample size}
-  \item{level}{coverage probability for confidence intervals. Default is \code{level=0.95}}
 }
 \references{
   Kauermann, Goeran/Kuechenhoff, Helmut (2010): Stichproben. Methoden und praktische Umsetzung mit R. Springer.

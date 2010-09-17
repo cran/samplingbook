@@ -1,18 +1,18 @@
 \name{pop}
 \alias{pop}
 \docType{data}
-\title{Small Sampling Example}
+\title{Small Suppositious Sampling Example}
 \description{
-\code{pop} is a suppositious data frame for a small population with 5 elements. It is used to illustrate survey sampling
+\code{pop} is a suppositious data frame for a small population with 5 elements. It is used for simple illustration of survey sampling
 estimators.
 }
 \usage{data(pop)}
 \format{
   A data frame with 5 observations on the following 3 variables.
   \describe{
-    \item{\code{id}}{a numeric vector, individual id}
-    \item{\code{X}}{a numeric vector, first characteristic}
-    \item{\code{Y}}{a numeric vector, second characteristic}
+    \item{\code{id}}{a numeric vector of individual identification values}
+    \item{\code{X}}{a numeric vector of first characteristic}
+    \item{\code{Y}}{a numeric vector of second characteristic}
   }
 }
 \references{
@@ -26,7 +26,7 @@ print(pop)
 data(pop)
 Y <- pop$Y
 Y
-# Draw a random sample with size=3
+# Draw a random sample pop size=3
 set.seed(93456)
 y <- sample(x = Y, size = 3)
 sort(y)

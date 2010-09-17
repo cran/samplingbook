@@ -16,7 +16,7 @@ function(e, P=0.5, N=Inf, level=0.95){
     N <- Inf
     warning("Proportion ",sQuote("P")," is close to border. Using ", sQuote("N = Inf")," for calculations.\n")
   }
-  if(e >= P | e >= (1-P)) stop("Wrong input: Estimate useless, if ", sQuote("e >= P")," or ", sQuote("e >= (1-P)"))
+  if(e > P | e > (1-P)) stop("Wrong input: Estimate useless, if ", sQuote("e > P")," or ", sQuote("e > (1-P)"))
   q= qnorm((1+level)/2)
   # N large enough
   if(N==Inf) {

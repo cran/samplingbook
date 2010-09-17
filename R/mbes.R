@@ -72,7 +72,9 @@ if (method=="simple"|method=="all"){
   if(var.est>0) se <- sqrt(var.est)
   else{
     se <- NA
-    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals may not be valid.")
+    kl <- NA
+    kr <- NA
+    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals cannot be calculated.")
   }  
   # return argument
   ret$simple <- list(mean=est,se=se, ci=c(kl,kr))
@@ -93,7 +95,9 @@ if (method=="diff"|method=="all"){
   if(var.est>0) se <- sqrt(var.est)
   else{
     se <- NA
-    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals may not be valid.")
+    kl <- NA
+    kr <- NA
+    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals cannot be calculated.")
   }  
   # return argument
   ret$diff <- list(mean=est,se=se, ci=c(kl,kr))
@@ -114,7 +118,9 @@ if (method=="ratio"|method=="all") {
   if(var.est>0) se <- sqrt(var.est)
   else{
     se <- NA
-    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals may not be valid.")
+    kl <- NA
+    kr <- NA
+    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals cannot be calculated.")
   }  
   # return argument
   ret$ratio <- list(mean=est,se=se, ci=c(kl,kr))
@@ -145,7 +151,9 @@ if (method=="regr"|method=="all") {
   if(var.est>0) se <- sqrt(var.est)
   else{
     se <- NA
-    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals may not be valid.")
+    kl <- NA
+    kr <- NA
+    warning("Standard error is ", sQuote("NA"),", because calculations for variance of mean has been not positive. Confidence intervals cannot be calculated.")
   }  
   # return argument
   ret$regr <- list(mean=est,se=se, ci=c(kl,kr), model=b)

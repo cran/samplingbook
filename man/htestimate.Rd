@@ -8,18 +8,18 @@ htestimate(y, N, PI, pk, pik, method = 'yg')
 \arguments{
   \item{y}{vector of observations}
   \item{N}{integer for population size}     
-  \item{PI}{square matrix of second order inclusion probabilities with \code{n} rows and cols. It is necessary for variance estimation by methods 'ht' and 'yg'.}
-  \item{pk}{vector of first order inclusion probabilities of length \code{n} for the sample elements. It is necessary for variance estimation by methods 'hh' and 'ha'.}
-  \item{pik}{vector of first order inclusion probabilities of length \code{N} for the population elements . It can be used for variance estimation by method 'ha'.}
-  \item{method}{method for variance estimation. Options are 'yg' (Yates and Grundy) and 'ht' (Horvitz-Thompson), approximative options are 'hh' (Hansen-Hurwitz) and 'ha' (Hajek).}
+  \item{PI}{square matrix of second order inclusion probabilities with \code{n} rows and cols. It is necessary to be specified for variance estimation by methods \code{'ht'} and \code{'yg'}.}
+  \item{pk}{vector of first order inclusion probabilities of length \code{n} for the sample elements. It is necessary to be specified for variance estimation by methods \code{'hh'} and \code{'ha'}.}
+  \item{pik}{an optional vector of first order inclusion probabilities of length \code{N} for the population elements . It can be used for variance estimation by method \code{'ha'}.}
+  \item{method}{method to be used for variance estimation. Options are \code{'yg'} (Yates and Grundy) and \code{'ht'} (Horvitz-Thompson), approximate options are \code{'hh'} (Hansen-Hurwitz) and \code{'ha'} (Hajek).}
 }
 \details{
-For using methods \code{'yg'} or \code{'ht'} matrix \code{PI} has to be provided, for \code{'hh'} and \code{'ha'} vector \code{pik} of inclusion probabilities has to be specified. 
-For Hajek method \code{'ha'} of variance estimation \code{pk} can be specified additionally. Unless an approximative Hajek method is used.
+For using methods \code{'yg'} or \code{'ht'} has to be provided matrix \code{PI}, and for \code{'hh'} and \code{'ha'} has to be specified vector \code{pk} of inclusion probabilities. 
+Additionally, for Hajek method \code{'ha'} can be specified \code{pik}. Unless, an approximate Hajek method is used.
 }
 \value{
 The function \code{htestimate} returns a value, which is a list consisting of the components
-  \item{call}{is a list of call components: \code{y} vector of observations, \code{N} population size, \code{PI} inclusion probabilities, \code{pk} inclusion probabilities of sample, \code{pik} full inclusion probabilities and \code{method} method for variance estimation}
+  \item{call}{is a list of call components: \code{y} observations, \code{N} population size, \code{PI} inclusion probabilities, \code{pk} inclusion probabilities of sample, \code{pik} full inclusion probabilities and \code{method} method for variance estimation}
   \item{mean}{mean estimate}
   \item{se}{standard error of the mean estimate}
 }
@@ -47,11 +47,14 @@ pk <- pps$pik[pps$sample]
 htestimate(sample$cases, N=N, pk=pk, method='hh')
 pik <- pps$pik
 htestimate(sample$cases, N=N, pk=pk, pik=pik, method='ha')
-htestimate(sample$cases, N=N, pk=pk, method='ha') # without pik just approximative calculation of Hajek method
-# calculation of confidence interval based on normal distribution for number of cases
+# without pik just approximate calculation of Hajek method
+htestimate(sample$cases, N=N, pk=pk, method='ha') 
+# calculate confidence interval based on normal distribution for number of cases
 est.ht <- htestimate(sample$cases, N=N, PI=PI, method='ht')
-est.ht$mean*N  # true number of cases is 18900
+est.ht$mean*N  
 lower <- est.ht$mean*N - qnorm(0.975)*N*est.ht$se
 upper <- est.ht$mean*N + qnorm(0.975)*N*est.ht$se
 c(lower,upper) 
+# true number of influenza cases
+sum(influenza$cases)
 }

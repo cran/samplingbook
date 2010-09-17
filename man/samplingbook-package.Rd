@@ -7,7 +7,7 @@
 Survey Sampling Procedures
 }
 \description{
-Sampling procedures from the book 'Stichproben - Methoden und praktische Umsetzung mit R' by Goeran Kauermann and Helmut Kuechenhoff (2010)  
+Sampling procedures from the book 'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann and Helmut Kuechenhoff (2010)  
 }
 \details{
 \tabular{ll}{
@@ -19,16 +19,15 @@ License: \tab GPL(>=2)\cr
 LazyLoad: \tab yes\cr
 }
 Index:
-\tabular{ll}{
- election\tab German Parliament Election Data\cr
+\tabular{ll}{election\tab German Parliament Election Data\cr
 htestimate\tab Horvitz-Thompson Estimator\cr
 influenza\tab Population and Cases of Influenza in Administrative Districts of Germany\cr
 mbes\tab Model Based Estimation\cr
 money\tab Money Data Frame\cr
-pop\tab Small Sampling Example\cr
+pop\tab Small Suppositious Sampling Example\cr
 pps.sampling \tab Sampling with Probabilities Proportional to Size\cr
-sample.size.mean \tab Sample Size Estimation for Mean Estimation\cr
-sample.size.prop \tab Sample Size Estimation for Proportions\cr
+sample.size.mean \tab Sample Size Calculation for Mean Estimation\cr
+sample.size.prop \tab Sample Size Calculation for Proportion Estimation\cr
 Samplingbook-package \tab Survey Sampling Procedures\cr
 Smean \tab Sampling Mean Estimation\cr
 Sprop \tab Sampling Proportion Estimation\cr
@@ -36,12 +35,12 @@ Sprop \tab Sampling Proportion Estimation\cr
 }
 \author{
 Author: Juliane Manitz <manitzj@gmx.de>,
-  contributions by 
-  Mark Hempelmann <mark.hempelmann@o2online.de>, 
-  Goeran Kauermann <gkauermann@wiwi.uni-bielefeld.de>, 
-  Helmut Kuechenhoff <kuechenhoff@stat.uni-muenchen.de>,
-  Cornelia Oberhauser <conny.oberhauser@gmx.de>,
-  Nina Westerheide <nwesterheide@wiwi.uni-bielefeld.de>, 
+  contributions by \cr
+  Mark Hempelmann <mark.hempelmann@o2online.de>, \cr
+  Goeran Kauermann <gkauermann@wiwi.uni-bielefeld.de>, \cr
+  Helmut Kuechenhoff <kuechenhoff@stat.uni-muenchen.de>, \cr
+  Cornelia Oberhauser <conny.oberhauser@gmx.de>, \cr
+  Nina Westerheide <nwesterheide@wiwi.uni-bielefeld.de>, \cr
   Manuel Wiesenfarth <m.wiesenfarth@uni-goettingen.de> \cr\cr
 Maintainer: Juliane Manitz  <manitzj@gmx.de>
 }
