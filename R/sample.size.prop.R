@@ -34,4 +34,3 @@ function(e, P=0.5, N=Inf, level=0.95){
   ret$n <- n
   structure(ret,class="sample.size.prop")
 }
-

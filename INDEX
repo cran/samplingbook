@@ -1,12 +1,18 @@
-election                                                              German Parliament Election Data
-htestimate                                                            Horvitz-Thompson Estimator
-influenza                                                             Population and Cases of Influenza for Administrative Districts of Germany
-mbes                                                                  Model Based Estimation
-money                                                                 Money Data Frame
-pop                                                                   Small Suppositious Sampling Example
-pps.sampling                                                          Sampling with Probabilities Proportional to Size
-sample.size.mean                                                      Sample Size Estimation for Mean Estimation
-sample.size.prop                                                      Sample Size Estimation for Proportion Estimation
-samplingbook-package                                                  Survey Sampling Procedures
-Smean                                                                 Sampling Mean Estimation
-Sprop                                                                 Sampling Proportion Estimation
+election                German Parliament Election Data
+htestimate              Horvitz-Thompson Estimator
+influenza               Population and Cases of Influenza for
+                        Administrative Districts of Germany
+mbes                    Model Based Estimation
+money                   Money Data Frame
+pop                     Small Suppositious Sampling Example
+pps.sampling            Sampling with Probabilities Proportional to
+                        Size
+sample.size.mean        Sample Size Calculation for Mean Estimation
+sample.size.prop        Sample Size Calculation for Proportion
+                        Estimation
+samplingbook-package    Survey Sampling Procedures
+Smean                   Sampling Mean Estimation
+Sprop                   Sampling Proportion Estimation
+stratamean              Stratified Sample Mean Estimation
+stratasamp              Sample Size Calculation for Stratified Sampling
+tax                     Hypothetical Tax Refund Data Frame

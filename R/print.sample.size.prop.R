@@ -7,4 +7,3 @@ function(x,...) {
  cat("\nSample size needed: ", x$n, "\n\n", sep="")
  invisible(x)
 }
-

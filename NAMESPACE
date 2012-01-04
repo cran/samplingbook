@@ -14,5 +14,7 @@ export(pps.sampling)
 S3method(print, pps.sampling)
 export(htestimate)
 S3method(print, htestimate)
-
+export(stratamean)
+S3method(print, stratamean)
+export(stratasamp)
 

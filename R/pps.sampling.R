@@ -62,4 +62,3 @@ function(z, n, id=1:N, method="sampford", return.PI=FALSE){
     ret$PI.full <- PI.full
     structure(ret,class="pps.sampling")
 }
-

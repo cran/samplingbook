@@ -43,4 +43,3 @@ function(y, N=Inf, level=0.95){
     ret$ci <- c(lowerLimit,upperLimit)
     structure(ret, class= "Smean")
   }
-

@@ -9,4 +9,3 @@ function(x,...){
   cat("Standard Error: ",x$se,"\n\n",sep="")
   invisible(x)
 }
-

@@ -13,13 +13,14 @@ Sampling procedures from the book 'Stichproben. Methoden und praktische Umsetzun
 \tabular{ll}{
 Package: \tab Samplingbook\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2010-04-13\cr
+Version: \tab 1.1\cr
+Date: \tab 2012-01-04\cr
 License: \tab GPL(>=2)\cr
 LazyLoad: \tab yes\cr
 }
 Index:
-\tabular{ll}{election\tab German Parliament Election Data\cr
+\tabular{ll}{
+election\tab German Parliament Election Data\cr
 htestimate\tab Horvitz-Thompson Estimator\cr
 influenza\tab Population and Cases of Influenza in Administrative Districts of Germany\cr
 mbes\tab Model Based Estimation\cr
@@ -31,6 +32,9 @@ sample.size.prop \tab Sample Size Calculation for Proportion Estimation\cr
 Samplingbook-package \tab Survey Sampling Procedures\cr
 Smean \tab Sampling Mean Estimation\cr
 Sprop \tab Sampling Proportion Estimation\cr
+stratamean \tab Stratified Sample Mean Estimation\cr
+stratasamp \tab Sample Size Calculation for Stratified Sampling\cr
+tax \tab Hypothetical Tax Refund Data Frame\cr
 }
 }
 \author{
@@ -39,6 +43,7 @@ Author: Juliane Manitz <manitzj@gmx.de>,
   Mark Hempelmann <mark.hempelmann@o2online.de>, \cr
   Goeran Kauermann <gkauermann@wiwi.uni-bielefeld.de>, \cr
   Helmut Kuechenhoff <kuechenhoff@stat.uni-muenchen.de>, \cr
+  Shuai Shao <shuai.shao@campus.lmu.de>, \cr
   Cornelia Oberhauser <conny.oberhauser@gmx.de>, \cr
   Nina Westerheide <nwesterheide@wiwi.uni-bielefeld.de>, \cr
   Manuel Wiesenfarth <m.wiesenfarth@uni-goettingen.de> \cr\cr

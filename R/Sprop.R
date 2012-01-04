@@ -94,4 +94,3 @@ function(y, m, n=length(y), N=Inf, level=0.95){
   }
   structure(ret, class= "Sprop")
 }
-

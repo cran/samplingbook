@@ -39,4 +39,3 @@ function(x,...){
  }
  invisible(x)
 }
-

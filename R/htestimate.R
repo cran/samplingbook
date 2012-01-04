@@ -65,4 +65,3 @@ function(y, N, PI, pk, pik, method="yg"){
   ret$se <- se
   structure(ret, class="htestimate")
 }
-

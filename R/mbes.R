@@ -48,10 +48,12 @@ else{
   if(length(aux) > 1 && method!="regr") stop("Wrong input: More than one auxiliary variable just allowed for method=", sQuote("regr"),".")
   if(length(aux) != p) stop("Wrong input: Length of ", sQuote("aux")," has not a value for every auxiliary variable.")
 }
+if(p==1){x.mean <- mean(mf[,-1])}
+else{x.mean <- colMeans(mf[,-1])}
 ### return argument
   ret <- list()
   ret$call <- list(formula=formula,data=data,aux=aux,N=N, method=method, level=level)
-  ret$info <- list(N=N,n=n,p=p,aux=aux,x.mean=mean(mf[,-1]))
+  ret$info <- list(N=N,n=n,p=p,aux=aux,x.mean=x.mean)
   ret$simple <- list()
   ret$diff <- list()
   ret$ratio <- list()
@@ -160,4 +162,3 @@ if (method=="regr"|method=="all") {
 }
 structure(ret,class="mbes")
 }
-
