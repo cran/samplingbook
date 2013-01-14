@@ -5,20 +5,22 @@
  The function \code{stratamean} estimates the population mean out of stratified samples either with or without consideration of finite population correction.
 }
 \usage{
-stratamean(y, h, Nh, wh, level = 0.95, eae = FALSE, data= NULL)
+stratamean(y, h, Nh, wh, level = 0.95, eae = FALSE)
 }
 \arguments{
   \item{y}{vector of target variable.}
   \item{h}{vector of stratifying variable.}
-  \item{Nh}{vector of sizes of every stratum, which has to be supplied in alphabetical or numerical order.}
-  \item{wh}{vector of weights of every stratum, which has to be supplied in alphabetical or numerical order.}
-  \item{level}{coverage probability for confidence intervals. Default is\code{level=0.95}.}
-  \item{eae}{\code{TRUE} for extensive output with the result in each and every stratum. Default is\code{eae=FALSE}.}
-  \item{data}{sample data. Default is \code{data=NULL}.}
+  \item{Nh}{vector of sizes of every stratum, which has to be supplied in alphabetical or numerical order of the categories of h.}
+  \item{wh}{vector of weights of every stratum, which has to be supplied in alphabetical or numerical order of the categories of h.}
+  \item{level}{coverage probability for confidence intervals. Default is \code{level=0.95}.}
+  \item{eae}{\code{TRUE} for extensive output with the result in each and every stratum. Default is \code{eae=FALSE}.}
+}
+\details{
+If the absolute stratum sizes \code{Nh} are given, the variances are calculated with finite population correction. Otherwise, if the stratum weights \code{wh} are given, the variances are calculated without finite population correction.
 }
 \value{
 The function \code{stratamean} returns a value, which is a list consisting of the components
-  \item{call}{is a list of call components: \code{y} target variable in sample data, \code{h} stratifying variable in sample data, \code{Nh} sizes of every stratum, \code{wh} weights of every stratum, \code{fpc} if with or without finite population correction, \code{level} coverage probability for confidence intervals}
+  \item{call}{is a list of call components: \code{y} target variable in sample data, \code{h} stratifying variable in sample data, \code{Nh} sizes of every stratum, \code{wh} weights of every stratum, \code{fpc} finite population correction, \code{level} coverage probability for confidence intervals}
   \item{mean}{mean estimate for population}
   \item{se}{standard error of the mean estimate for population}
   \item{ci}{vector of confidence interval boundaries for population}
@@ -26,10 +28,10 @@ The function \code{stratamean} returns a value, which is a list consisting of th
 \references{
   Kauermann, Goeran/Kuechenhoff, Helmut (2010): Stichproben. Methoden und praktische Umsetzung mit R. Springer.
 }
-\author{Shuai Shao}
+\author{Shuai Shao and Juliane Manitz}
 \seealso{\code{\link{Smean}}, \code{\link{Sprop}}}
 \examples{
-#random data
+# random data
 testy <- rnorm(100)
 testh <- c(rep("male",40), rep("female",60))
 stratamean(testy, testh, wh=c(0.5, 0.5))

@@ -13,8 +13,8 @@ Sampling procedures from the book 'Stichproben. Methoden und praktische Umsetzun
 \tabular{ll}{
 Package: \tab Samplingbook\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2012-01-04\cr
+Version: \tab 2.0\cr
+Date: \tab 2013-01-14\cr
 License: \tab GPL(>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -43,7 +43,7 @@ Author: Juliane Manitz <manitzj@gmx.de>,
   Mark Hempelmann <mark.hempelmann@o2online.de>, \cr
   Goeran Kauermann <gkauermann@wiwi.uni-bielefeld.de>, \cr
   Helmut Kuechenhoff <kuechenhoff@stat.uni-muenchen.de>, \cr
-  Shuai Shao <shuai.shao@campus.lmu.de>, \cr
+	Shuai Shao <shuai.shao@campus.lmu.de>, \cr
   Cornelia Oberhauser <conny.oberhauser@gmx.de>, \cr
   Nina Westerheide <nwesterheide@wiwi.uni-bielefeld.de>, \cr
   Manuel Wiesenfarth <m.wiesenfarth@uni-goettingen.de> \cr\cr

@@ -17,4 +17,9 @@ S3method(print, htestimate)
 export(stratamean)
 S3method(print, stratamean)
 export(stratasamp)
+export(stratasize)
+S3method(print, stratasize)
+export(submean)
+S3method(print, submean)
+
 
