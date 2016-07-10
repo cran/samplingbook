@@ -7,14 +7,14 @@
 Survey Sampling Procedures
 }
 \description{
-Sampling procedures from the book 'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann and Helmut Kuechenhoff (2010)  
+Sampling procedures from the book 'Stichproben - Methoden und praktische Umsetzung mit R' by Goeran Kauermann and Helmut Kuechenhoff (2010).
 }
 \details{
 \tabular{ll}{
 Package: \tab Samplingbook\cr
 Type: \tab Package\cr
-Version: \tab 2.0\cr
-Date: \tab 2013-01-14\cr
+Version: \tab 1.2.1\cr
+Date: \tab 2016-07-05\cr
 License: \tab GPL(>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -38,7 +38,7 @@ tax \tab Hypothetical Tax Refund Data Frame\cr
 }
 }
 \author{
-Author: Juliane Manitz <manitzj@gmx.de>,
+Author: Juliane Manitz <r@manitz.org>,
   contributions by \cr
   Mark Hempelmann <mark.hempelmann@o2online.de>, \cr
   Goeran Kauermann <gkauermann@wiwi.uni-bielefeld.de>, \cr
@@ -47,7 +47,7 @@ Author: Juliane Manitz <manitzj@gmx.de>,
   Cornelia Oberhauser <conny.oberhauser@gmx.de>, \cr
   Nina Westerheide <nwesterheide@wiwi.uni-bielefeld.de>, \cr
   Manuel Wiesenfarth <m.wiesenfarth@uni-goettingen.de> \cr\cr
-Maintainer: Juliane Manitz  <manitzj@gmx.de>
+Maintainer: Juliane Manitz  <r@manitz.org>
 }
 \references{
   Kauermann, Goeran/Kuechenhoff, Helmut (2010): Stichproben. Methoden und praktische Umsetzung mit R. Springer.

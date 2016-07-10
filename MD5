@@ -1,5 +1,5 @@
-bae4e9d363af5140be148c340144f157 *DESCRIPTION
-86b5a487a32ea68896f501a8fe3a617c *NAMESPACE
+56133bd97383015e705b6cf629327d12 *DESCRIPTION
+2aca4e0cc961561283d962b151e914d7 *NAMESPACE
 ec24dff0381d2ca6a19bf4dd839e91e8 *R/Smean.R
 ebc9b13aefc308f3150f1792e5db9e6b *R/Sprop.R
 cc9928fa00b88331dcce082eaeef781c *R/htestimate.R
@@ -38,7 +38,7 @@ d4e04186264656201ce96694386e4eec *man/influenza.Rd
 cd9ecc03dd8270bca23af0ba8f240557 *man/pps.sampling.Rd
 846f87b098f6e134916d3c5276aba600 *man/sample.size.mean.Rd
 875f45e32e56318be47c2650a53378b8 *man/sample.size.prop.Rd
-f5cc7a0cda9e6478469508d130ff8520 *man/samplingbook-package.Rd
+abdbcb8f4885aa5ef5a441e406175926 *man/samplingbook-package.Rd
 96aa16016682744e50ed2b9e5e39af94 *man/stratamean.Rd
 dae570916941c371790ee438fdc1a9a3 *man/stratasamp.Rd
 e03ebe26e76729bb061171f1186b10ae *man/stratasize.Rd
