@@ -51,7 +51,8 @@ else{
 ### return argument
   ret <- list()
   ret$call <- list(formula=formula,data=data,aux=aux,N=N, method=method, level=level)
-  x.mean <- ifelse(ncol(mf)>2,colMeans(mf[,-1], na.rm=TRUE), mean(mf[,-1],na.rm=TRUE))
+  x.mean <- colMeans(mf, na.rm=TRUE)[-1]
+#ifelse(ncol(mf)>2,colMeans(mf[,-1], na.rm=TRUE), mean(mf[,-1],na.rm=TRUE))
   ret$info <- list(N=N,n=n,p=p,aux=aux,x.mean=x.mean)
   ret$simple <- list()
   ret$diff <- list()
